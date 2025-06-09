@@ -138,3 +138,5 @@ npm start
 - ✍️ Task Management: Create new tasks, assign users, and update task status.
 - 🤝 Collaboration: Invite and manage team members.
 - 📊 Reports: Export your tasks and progress for reports.
+
+[Taskify.pdf](https://github.com/user-attachments/files/20648733/Taskify.pdf)
