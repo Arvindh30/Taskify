@@ -139,4 +139,7 @@ npm start
 - 🤝 Collaboration: Invite and manage team members.
 - 📊 Reports: Export your tasks and progress for reports.
 
+---
+
+### 🚀 Output
 [Taskify.pdf](https://github.com/user-attachments/files/20648733/Taskify.pdf)
