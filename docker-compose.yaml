@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    networks:
+      - mern_network
+    environment:
+      PORT: 8000
+      MONGO_URI: <link>
+      JWT_SECRET: <secret>
+      ADMIN_INVITE_TOKEN: <token>
+
+  frontend:
+    build: ./frontend/Task-Manager
+    ports:
+      - "5173:5173"
+    networks:
+      - mern_network
+
+networks:
+  mern_network:
+    driver: bridge
