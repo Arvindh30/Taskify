@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    networks:
+      - mern_network
+    environment:
+      PORT: 8000
+      MONGO_URI: "mongodb+srv://tmuser:tmpass%40123@taskmanager.rjzgfv5.mongodb.net/?retryWrites=true&w=majority&appName=taskmanager"
+      JWT_SECRET: "d4a22a71970b327fd167327b90f24fccc495af1322a477823d87ad73169daa0cfba96e664570a6635ec4eabadeaf546c1c428b816673c336a3c6d2efd0aea95b"
+      ADMIN_INVITE_TOKEN: 4588944
+
+  frontend:
+    build: ./frontend/Task-Manager
+    ports:
+      - "5173:5173"
+    networks:
+      - mern_network
+
+networks:
+  mern_network:
+    driver: bridge
