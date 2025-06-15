@@ -1,4 +1,4 @@
-export const BASE_URL = "http://100.24.51.212:8000";
+export const BASE_URL = "http://34.207.175.9:8000";
 
 export const API_PATHS = {
   AUTH: {
