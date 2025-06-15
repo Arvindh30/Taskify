@@ -5,12 +5,7 @@ services:
       - "8000:8000"
     networks:
       - mern_network
-    environment:
-      PORT: 8000
-      MONGO_URI: <link>
-      JWT_SECRET: <secret>
-      ADMIN_INVITE_TOKEN: <token>
-
+      
   frontend:
     build: ./frontend/Task-Manager
     ports:
